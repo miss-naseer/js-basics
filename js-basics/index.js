@@ -7,14 +7,29 @@ function addMovie(movieTitle) {
     }
     
 }
+// function displayMovies() {
+//     if (favoriteMovies.length === 0) {
+//         console.log("No movies in the list.");
+//     } else {
+//         for (let i = 0; i < favoriteMovies.length; i++) {
+//             console.log(`${i + 1}. ${favoriteMovies[i]}`);
+//         }
+//     }
+// }
+
+
 function displayMovies() {
-    if (favoriteMovies.length === 0) {
+    if (favMovies.length === 0) {
         console.log("No movies in the list.");
     } else {
-        for (let i = 0; i < favoriteMovies.length; i++) {
-            console.log(`${i + 1}. ${favoriteMovies[i]}`);
-        }
+        favMovies.forEach((movie, index) => {
+            console.log(`${index + 1}. ${movie}`);
+        });
     }
+}
+function removeMovie(movieTitle) {
+    const index = favMovies.indexOf(movieTitle);
+
 }
 
 
